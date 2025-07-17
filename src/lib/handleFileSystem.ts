@@ -54,16 +54,16 @@ export function readSourceData(sourceFilePath: string): Promise<DMTVData[]> {
 
 const dateCreated = new Date();
 const resultFolderPath = path.join(__dirname, `out/`);
-const resultFileName = `results${format(dateCreated, "yyyyMMddHHmmss")}.log`;
+let resultFileName = `results${format(dateCreated, "yyyyMMddHHmmss")}.log`;
+if (logger.isProd === false) {
+    resultFileName = `results${format(dateCreated, "yyyyMMddHHmmss")}.debug.log`;
+}
 const resultFilePath = path.join(resultFolderPath, resultFileName);
 const logFolderPath = path.join(__dirname, `out/`);
 const logFileName = `log${format(dateCreated, "yyyyMMddHHmmss")}.log`;
 const logFilePath = path.join(logFolderPath, logFileName);
 
 export function writeOutput(content: string) {
-    if (logger.isProd === false) {
-        return;
-    }
     if (fs.existsSync(resultFolderPath) === false) {
         fs.mkdirSync(resultFolderPath);
     }
