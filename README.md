@@ -45,3 +45,5 @@ The program will output the results to `out/`.
 ## Troubleshooting
 
 You can get a debug log by passing the `--debug` flag when running the program.
+
+Open an issue on GitHub if you have issues.
