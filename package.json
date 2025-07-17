@@ -11,9 +11,7 @@
     "@tsconfig/node22": "^22.0.2",
     "@types/cli-progress": "^3.11.6",
     "openapi-typescript": "^7.8.0",
-    "ts-patch": "^3.3.0",
-    "tsx": "^4.20.3",
-    "typescript-transform-paths": "^3.5.5"
+    "tsx": "^4.20.3"
   },
   "dependencies": {
     "@inquirer/prompts": "^7.6.0",

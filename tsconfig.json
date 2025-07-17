@@ -13,9 +13,6 @@
       "@lib/*": ["src/lib/*"],
       "@api/*": ["src/api/*"]
     },
-    "outDir": "dist",
-    "plugins": [
-      { "transform": "typescript-transform-paths" }
-    ]
+    "outDir": "dist"
   }
 }
