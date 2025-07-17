@@ -71,7 +71,7 @@ export function writeOutput(content: string) {
         fs.writeFile(resultFilePath, '', { flag: 'a+' }, () => {});
     }
 
-    fs.appendFile(resultFolderPath, util.stripVTControlCharacters(content), () => {});
+    fs.appendFile(resultFilePath, util.stripVTControlCharacters(content), () => {});
 }
 
 export function writeLog(content: string) {
