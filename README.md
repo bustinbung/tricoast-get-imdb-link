@@ -2,6 +2,8 @@
 
 Attempts to find an IMDB link for a movie with data given.
 
+This repository's functionality has been integrated into `tricoast-utils`.
+
 ## Installation
 
 Install packages using npm.
